@@ -1,0 +1,23 @@
+:root {
+  --color-secondary: #ffd166;
+}
+
+.header .card-title {
+  color: var(--color-secondary);
+  text-shadow: 2px 2px 4px black;
+}
+
+nav {
+  background: black;     
+  display: flex;           
+  justify-content: center; 
+  gap: 30px;              
+  padding: 20px;         
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;   
+  font-weight: bold;      
+  font-family: sans-serif;
+}

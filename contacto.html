@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="css/estilos.css" rel="stylesheet" type="text/css" />
+    <title>Festival Harbin - Registro</title>
+</head>
+
+<body class="bg-black text-light d-flex flex-column min-vh-100">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black py-3">
+        <div class="container justify-content-center gap-4">
+            <a class="nav-link fw-bold text-light fs-5" href="index.html">Inicio</a>
+            <a class="nav-link fw-bold text-light fs-5" href="contacto.html">Formulario</a>
+            <a class="nav-link fw-bold text-light fs-5" href="historia.html">Historia</a>
+        </div>
+    </nav>
+
+    <header class="container-fluid p-0">
+        <div class="row g-0">
+            <div class="col-12">
+                <div class="card bg-dark rounded-0 border-0">
+                    <img src="imagenes/inicio.jpg" class="card-img" alt="inicio" style="height: 60vh; object-fit: cover;">
+                    <div class="card-img-overlay d-flex flex-column justify-content-start text-center">
+                        <h1 class="card-title">Festival del Hielo y la Nieve de Harvin</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="py-5 flex-grow-1">
+        <div class="container">
+            <div class="row justify-content-center align-items-start g-4">
+                
+                <div class="col-12 col-lg-6">
+                    <div class="card bg-dark text-light border-0 shadow-lg rounded-4 p-4 p-sm-5">
+                        <h2 class="text-center fw-bold mb-4 text-uppercase tracking-wide">Formulario de Registro</h2>
+                        
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label fw-semibold text-info">Nombre</label>
+                                <input type="text" class="form-control bg-secondary text-light border-0" id="nombre" placeholder="Ingresa tu nombre">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="email" class="form-label fw-semibold text-info">Correo Electrónico</label>
+                                <input type="email" class="form-control bg-secondary text-light border-0" id="email" placeholder="Ingresa tu correo electrónico">
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label fw-semibold text-info">Número Telefónico</label>
+                                <input type="tel" class="form-control bg-secondary text-light border-0" id="telefono" placeholder="+34 600 000 000">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="password" class="form-label fw-semibold text-info">Contraseña</label>
+                                <input type="password" class="form-control bg-secondary text-light border-0" id="password" placeholder="Ingresa tu contraseña">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="edad" class="form-label fw-semibold text-info">Edad</label>
+                                <input type="number" min="1" max="123" class="form-control bg-secondary text-light border-0" id="edad" placeholder="Ingresa tu edad">
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="pais" class="form-label fw-semibold text-info">País</label>
+                                <select class="form-select bg-secondary text-light border-0" id="pais">
+                                    <option selected disabled>Selecciona tu país</option>
+                                    <option value="ar">Argentina</option>
+                                    <option value="cl">Chile</option>
+                                    <option value="co">Colombia</option>
+                                    <option value="es">España</option>
+                                    <option value="us">Estados Unidos</option>
+                                    <option value="fr">Francia</option>
+                                    <option value="mx">México</option>
+                                    <option value="pe">Perú</option>
+                                    <option value="pt">Portugal</option>
+                                    <option value="uy">Uruguay</option>
+                                    <option value="ot">Otro lugar del mundo</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold text-info d-block">Género</label>
+                                <div class="bg-secondary p-3 rounded-3">
+                                    <div class="row g-2">
+                                        <div class="col-12 col-sm-4">
+                                            <div class="form-check m-0">
+                                                <input class="form-check-input" type="radio" name="genero" id="generoMasculino" value="masculino">
+                                                <label class="form-check-label" for="generoMasculino">Masculino</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-4">
+                                            <div class="form-check m-0">
+                                                <input class="form-check-input" type="radio" name="genero" id="generoFemenino" value="femenino">
+                                                <label class="form-check-label" for="generoFemenino">Femenino</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-4">
+                                            <div class="form-check m-0">
+                                                <input class="form-check-input" type="radio" name="genero" id="generoOtro" value="otro">
+                                                <label class="form-check-label" for="generoOtro">Otro</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label class="form-label fw-semibold text-info d-block">¿Te animas a ir al festival?</label>
+                                <div class="bg-secondary p-3 rounded-3">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="evaluacion" id="Si" value="si">
+                                        <label class="form-check-label" for="Si">Definitivamente</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="evaluacion" id="TalVez" value="no se">
+                                        <label class="form-check-label" for="TalVez">Tal vez algún día</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="radio" name="evaluacion" id="No" value="no">
+                                        <label class="form-check-label" for="No">Definitivamente no</label>
+                                    </div>
+                                    <div class="form-check mb-0">
+                                        <input class="form-check-input" type="radio" name="evaluacion" id="que" value="que">
+                                        <label class="form-check-label" for="que">Ir a qué? (marca si ni leiste)</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mb-4">
+                                <label class="form-label fw-semibold text-info d-block">¿Qué actividades te gustaría realizar allí?</label>
+                                <div class="bg-secondary p-3 rounded-3">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="actividad1" value="fotos">
+                                        <label class="form-check-label" for="actividad1">Tomar fotos de las luces LED nocturnas</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="actividad2" value="tobogan">
+                                        <label class="form-check-label" for="actividad2">Lanzarme por los toboganes de hielo gigantes</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="actividad3" value="escultura">
+                                        <label class="form-check-label" for="actividad3">Ver el laberinto y las esculturas colosales</label>
+                                    </div>
+                                    <div class="form-check mb-0">
+                                        <input class="form-check-input" type="checkbox" id="actividad4" value="sobrevivir">
+                                        <label class="form-check-label" for="actividad4">Sobrevivir al frío siberiano sin congelarme</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-info text-dark fw-bold rounded-3 py-2 text-uppercase">Registrarse</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <div class="p-4 bg-dark rounded-4 shadow-lg border-0">
+                        <h3 class="text-center text-light text-uppercase fs-5 fw-bold mb-4 tracking-wide">Datos Útiles sobre el Festival</h3>
+                        
+                        <div class="accordion accordion-flush rounded-3 overflow-hidden" id="accordionHarbin">
+                            
+                            <div class="accordion-item bg-secondary text-light border-bottom border-dark">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-secondary text-light collapsed fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                        ¿Cuánto frío hace realmente en Harbin?
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionHarbin">
+                                    <div class="accordion-body bg-dark text-light">
+                                        Due to the siberian wind, las temperaturas promedio durante el festival rondan los -15°C de día y pueden desplomarse fácilmente hasta los -25°C o -30°C durante la noche. ¡Es obligatorio vestirse con múltiples capas térmicas!
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-secondary text-light border-bottom border-dark">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-secondary text-light collapsed fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                        ¿Qué pasa con las estructuras cuando llega la primavera?
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionHarbin">
+                                    <div class="accordion-body bg-dark text-light">
+                                        A finales de febrero o principios de marzo, cuando las temperaturas empiezan a subir, el hielo comienza a derretirse de forma natural. Por motivos de seguridad, los organizadores cierran el parque y se encargan de desmantelar las estructuras restantes para evitar colapsos, devolviendo el agua de forma limpia al Río Songhua.
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="accordion-item bg-secondary text-light">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button bg-secondary text-light collapsed fw-bold shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                        ¿De dónde sacan tanto hielo para construir?
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionHarbin">
+                                    <div class="accordion-body bg-dark text-light">
+                                        Se extraen manualmente más de 200.000 metros cúbicos de hielo directamente de la superficie congelada del Río Songhua. Se escoge este río porque su corriente lenta produce bloques de hielo extremadamente gruesos, densos y con una transparencia cristalina idónea para los efectos de iluminación.
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div> 
+                    </div>
+                </div>
+
+            </div> 
+        </div>
+    </main>
+
+    <footer class="bg-dark py-3 mt-auto">
+        <div class="container">
+            <div class="row align-items-center g-3">
+                <div class="col-12 col-md-6 text-center text-md-start">
+                    <p class="m-0">¡Gracias por acompañarnos en esta celebración!</p>
+                </div>
+                <div class="col-12 col-md-6 text-center text-md-end">
+                    <img src="imagenes/facebook.png" class="img-fluid mx-2" style="height: 30px;" alt="Facebook">
+                    <img src="imagenes/instagram.png" class="img-fluid mx-2" style="height: 30px;" alt="Instagram">
+                    <img src="imagenes/youtube.png" class="img-fluid mx-2" style="height: 30px;" alt="YouTube">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+
+</body>
+</html>
